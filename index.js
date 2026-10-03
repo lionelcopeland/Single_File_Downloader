@@ -1,9 +1,9 @@
-const downloadbutton = document.getElementById("mydownload");
+const downloadButton = document.getElementById("mydownload");
 
-async function downloadfile() {
+async function downloadFile() {
     const response = await fetch("files/test.txt");
 
-    if(!response.ok) {
+    if (!response.ok) {
         console.log("Download failed!");
         return;
     }
@@ -13,15 +13,12 @@ async function downloadfile() {
     const url = URL.createObjectURL(blob);
 
     const link = document.createElement("a");
-
     link.href = url;
-
     link.download = "test.txt";
 
     link.click();
 
     URL.revokeObjectURL(url);
-
 }
 
-downloadbutton.addEventListener("click", downloadFile);
+downloadButton.addEventListener("click", downloadFile);
