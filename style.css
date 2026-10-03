@@ -1,0 +1,29 @@
+.box {
+    border: 2px solid;
+    height: auto;
+    width: auto;
+}
+
+body {
+    background-color: #332f2f;
+    position: relative;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+button {
+    background-color: #fff;
+    color: #332f2f;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 0px;
+
+    display: block;
+    margin: 0 auto;
+}
